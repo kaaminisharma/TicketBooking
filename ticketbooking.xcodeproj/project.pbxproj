@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE0B982B1F9206910097BEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B982A1F9206910097BEAA /* main.m */; };
+		EE0B982E1F9206910097BEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B982D1F9206910097BEAA /* AppDelegate.m */; };
+		EE0B98341F9206910097BEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0B98321F9206910097BEAA /* Main.storyboard */; };
+		EE0B98361F9206910097BEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0B98351F9206910097BEAA /* Assets.xcassets */; };
+		EE0B98391F9206910097BEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0B98371F9206910097BEAA /* LaunchScreen.storyboard */; };
+		EE0B98441F9206910097BEAA /* ticketbookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B98431F9206910097BEAA /* ticketbookingTests.m */; };
+		EE0B984F1F9206920097BEAA /* ticketbookingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B984E1F9206920097BEAA /* ticketbookingUITests.m */; };
+		EE0B985E1F9208BF0097BEAA /* allTicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B985D1F9208BF0097BEAA /* allTicketsTableViewController.m */; };
+		EE0B98621F9209780097BEAA /* customTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B98601F9209780097BEAA /* customTableViewCell.m */; };
+		EE0B98631F9209780097BEAA /* customTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE0B98611F9209780097BEAA /* customTableViewCell.xib */; };
+		EE0B98661F9211560097BEAA /* tourism.png in Resources */ = {isa = PBXBuildFile; fileRef = EE0B98651F9211560097BEAA /* tourism.png */; };
+		EE0B98691F9214130097BEAA /* ticketDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B98681F9214130097BEAA /* ticketDetailViewController.m */; };
+		EE0B986C1F922DA30097BEAA /* singletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0B986B1F922DA30097BEAA /* singletonViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE0B98401F9206910097BEAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0B981E1F9206910097BEAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0B98251F9206910097BEAA;
+			remoteInfo = ticketbooking;
+		};
+		EE0B984B1F9206910097BEAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0B981E1F9206910097BEAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0B98251F9206910097BEAA;
+			remoteInfo = ticketbooking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE0B98261F9206910097BEAA /* ticketbooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ticketbooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0B982A1F9206910097BEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE0B982C1F9206910097BEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE0B982D1F9206910097BEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE0B98331F9206910097BEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE0B98351F9206910097BEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE0B98381F9206910097BEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE0B983A1F9206910097BEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0B983F1F9206910097BEAA /* ticketbookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticketbookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0B98431F9206910097BEAA /* ticketbookingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ticketbookingTests.m; sourceTree = "<group>"; };
+		EE0B98451F9206910097BEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0B984A1F9206910097BEAA /* ticketbookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticketbookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0B984E1F9206920097BEAA /* ticketbookingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ticketbookingUITests.m; sourceTree = "<group>"; };
+		EE0B98501F9206920097BEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0B985C1F9208BF0097BEAA /* allTicketsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allTicketsTableViewController.h; sourceTree = "<group>"; };
+		EE0B985D1F9208BF0097BEAA /* allTicketsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = allTicketsTableViewController.m; sourceTree = "<group>"; };
+		EE0B985F1F9209780097BEAA /* customTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTableViewCell.h; sourceTree = "<group>"; };
+		EE0B98601F9209780097BEAA /* customTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTableViewCell.m; sourceTree = "<group>"; };
+		EE0B98611F9209780097BEAA /* customTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customTableViewCell.xib; sourceTree = "<group>"; };
+		EE0B98651F9211560097BEAA /* tourism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tourism.png; sourceTree = "<group>"; };
+		EE0B98671F9214130097BEAA /* ticketDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ticketDetailViewController.h; sourceTree = "<group>"; };
+		EE0B98681F9214130097BEAA /* ticketDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ticketDetailViewController.m; sourceTree = "<group>"; };
+		EE0B986A1F922DA30097BEAA /* singletonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singletonViewController.h; sourceTree = "<group>"; };
+		EE0B986B1F922DA30097BEAA /* singletonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singletonViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0B98231F9206910097BEAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0B983C1F9206910097BEAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0B98471F9206910097BEAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0B981D1F9206910097BEAA = {
+			isa = PBXGroup;
+			children = (
+				EE0B98281F9206910097BEAA /* ticketbooking */,
+				EE0B98421F9206910097BEAA /* ticketbookingTests */,
+				EE0B984D1F9206910097BEAA /* ticketbookingUITests */,
+				EE0B98271F9206910097BEAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0B98271F9206910097BEAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B98261F9206910097BEAA /* ticketbooking.app */,
+				EE0B983F1F9206910097BEAA /* ticketbookingTests.xctest */,
+				EE0B984A1F9206910097BEAA /* ticketbookingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0B98281F9206910097BEAA /* ticketbooking */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B982C1F9206910097BEAA /* AppDelegate.h */,
+				EE0B982D1F9206910097BEAA /* AppDelegate.m */,
+				EE0B985C1F9208BF0097BEAA /* allTicketsTableViewController.h */,
+				EE0B985D1F9208BF0097BEAA /* allTicketsTableViewController.m */,
+				EE0B986A1F922DA30097BEAA /* singletonViewController.h */,
+				EE0B986B1F922DA30097BEAA /* singletonViewController.m */,
+				EE0B985F1F9209780097BEAA /* customTableViewCell.h */,
+				EE0B98601F9209780097BEAA /* customTableViewCell.m */,
+				EE0B98611F9209780097BEAA /* customTableViewCell.xib */,
+				EE0B98671F9214130097BEAA /* ticketDetailViewController.h */,
+				EE0B98681F9214130097BEAA /* ticketDetailViewController.m */,
+				EE0B98321F9206910097BEAA /* Main.storyboard */,
+				EE0B98351F9206910097BEAA /* Assets.xcassets */,
+				EE0B98371F9206910097BEAA /* LaunchScreen.storyboard */,
+				EE0B98651F9211560097BEAA /* tourism.png */,
+				EE0B983A1F9206910097BEAA /* Info.plist */,
+				EE0B98291F9206910097BEAA /* Supporting Files */,
+			);
+			path = ticketbooking;
+			sourceTree = "<group>";
+		};
+		EE0B98291F9206910097BEAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B982A1F9206910097BEAA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE0B98421F9206910097BEAA /* ticketbookingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B98431F9206910097BEAA /* ticketbookingTests.m */,
+				EE0B98451F9206910097BEAA /* Info.plist */,
+			);
+			path = ticketbookingTests;
+			sourceTree = "<group>";
+		};
+		EE0B984D1F9206910097BEAA /* ticketbookingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B984E1F9206920097BEAA /* ticketbookingUITests.m */,
+				EE0B98501F9206920097BEAA /* Info.plist */,
+			);
+			path = ticketbookingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0B98251F9206910097BEAA /* ticketbooking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0B98531F9206920097BEAA /* Build configuration list for PBXNativeTarget "ticketbooking" */;
+			buildPhases = (
+				EE0B98221F9206910097BEAA /* Sources */,
+				EE0B98231F9206910097BEAA /* Frameworks */,
+				EE0B98241F9206910097BEAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ticketbooking;
+			productName = ticketbooking;
+			productReference = EE0B98261F9206910097BEAA /* ticketbooking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE0B983E1F9206910097BEAA /* ticketbookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0B98561F9206920097BEAA /* Build configuration list for PBXNativeTarget "ticketbookingTests" */;
+			buildPhases = (
+				EE0B983B1F9206910097BEAA /* Sources */,
+				EE0B983C1F9206910097BEAA /* Frameworks */,
+				EE0B983D1F9206910097BEAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0B98411F9206910097BEAA /* PBXTargetDependency */,
+			);
+			name = ticketbookingTests;
+			productName = ticketbookingTests;
+			productReference = EE0B983F1F9206910097BEAA /* ticketbookingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE0B98491F9206910097BEAA /* ticketbookingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0B98591F9206920097BEAA /* Build configuration list for PBXNativeTarget "ticketbookingUITests" */;
+			buildPhases = (
+				EE0B98461F9206910097BEAA /* Sources */,
+				EE0B98471F9206910097BEAA /* Frameworks */,
+				EE0B98481F9206910097BEAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0B984C1F9206910097BEAA /* PBXTargetDependency */,
+			);
+			name = ticketbookingUITests;
+			productName = ticketbookingUITests;
+			productReference = EE0B984A1F9206910097BEAA /* ticketbookingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0B981E1F9206910097BEAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = kaamini;
+				TargetAttributes = {
+					EE0B98251F9206910097BEAA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W9YQCNX9JH;
+					};
+					EE0B983E1F9206910097BEAA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W9YQCNX9JH;
+						TestTargetID = EE0B98251F9206910097BEAA;
+					};
+					EE0B98491F9206910097BEAA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W9YQCNX9JH;
+						TestTargetID = EE0B98251F9206910097BEAA;
+					};
+				};
+			};
+			buildConfigurationList = EE0B98211F9206910097BEAA /* Build configuration list for PBXProject "ticketbooking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE0B981D1F9206910097BEAA;
+			productRefGroup = EE0B98271F9206910097BEAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0B98251F9206910097BEAA /* ticketbooking */,
+				EE0B983E1F9206910097BEAA /* ticketbookingTests */,
+				EE0B98491F9206910097BEAA /* ticketbookingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE0B98241F9206910097BEAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0B98391F9206910097BEAA /* LaunchScreen.storyboard in Resources */,
+				EE0B98361F9206910097BEAA /* Assets.xcassets in Resources */,
+				EE0B98631F9209780097BEAA /* customTableViewCell.xib in Resources */,
+				EE0B98661F9211560097BEAA /* tourism.png in Resources */,
+				EE0B98341F9206910097BEAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0B983D1F9206910097BEAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0B98481F9206910097BEAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE0B98221F9206910097BEAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0B98691F9214130097BEAA /* ticketDetailViewController.m in Sources */,
+				EE0B982E1F9206910097BEAA /* AppDelegate.m in Sources */,
+				EE0B986C1F922DA30097BEAA /* singletonViewController.m in Sources */,
+				EE0B985E1F9208BF0097BEAA /* allTicketsTableViewController.m in Sources */,
+				EE0B98621F9209780097BEAA /* customTableViewCell.m in Sources */,
+				EE0B982B1F9206910097BEAA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0B983B1F9206910097BEAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0B98441F9206910097BEAA /* ticketbookingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0B98461F9206910097BEAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0B984F1F9206920097BEAA /* ticketbookingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0B98411F9206910097BEAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0B98251F9206910097BEAA /* ticketbooking */;
+			targetProxy = EE0B98401F9206910097BEAA /* PBXContainerItemProxy */;
+		};
+		EE0B984C1F9206910097BEAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0B98251F9206910097BEAA /* ticketbooking */;
+			targetProxy = EE0B984B1F9206910097BEAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE0B98321F9206910097BEAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE0B98331F9206910097BEAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE0B98371F9206910097BEAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE0B98381F9206910097BEAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE0B98511F9206920097BEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE0B98521F9206920097BEAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE0B98541F9206920097BEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ticketbooking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaamini.ticketbooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE0B98551F9206920097BEAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ticketbooking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaamini.ticketbooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE0B98571F9206920097BEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ticketbookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaamini.ticketbookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ticketbooking.app/ticketbooking";
+			};
+			name = Debug;
+		};
+		EE0B98581F9206920097BEAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ticketbookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaamini.ticketbookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ticketbooking.app/ticketbooking";
+			};
+			name = Release;
+		};
+		EE0B985A1F9206920097BEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ticketbookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaamini.ticketbookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ticketbooking;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EE0B985B1F9206920097BEAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ticketbookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaamini.ticketbookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ticketbooking;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE0B98211F9206910097BEAA /* Build configuration list for PBXProject "ticketbooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0B98511F9206920097BEAA /* Debug */,
+				EE0B98521F9206920097BEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0B98531F9206920097BEAA /* Build configuration list for PBXNativeTarget "ticketbooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0B98541F9206920097BEAA /* Debug */,
+				EE0B98551F9206920097BEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0B98561F9206920097BEAA /* Build configuration list for PBXNativeTarget "ticketbookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0B98571F9206920097BEAA /* Debug */,
+				EE0B98581F9206920097BEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0B98591F9206920097BEAA /* Build configuration list for PBXNativeTarget "ticketbookingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0B985A1F9206920097BEAA /* Debug */,
+				EE0B985B1F9206920097BEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE0B981E1F9206910097BEAA /* Project object */;
+}

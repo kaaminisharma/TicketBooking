@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QPl-2u-2nb">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bXj-e8-Hjv">
+            <objects>
+                <navigationController id="QPl-2u-2nb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hoT-fy-nby">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jk5-4l-BGL" kind="relationship" relationship="rootViewController" id="ezm-Fr-K0B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQL-NY-AzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="-156"/>
+        </scene>
+        <!--All Tickets-->
+        <scene sceneID="JsK-iE-rZK">
+            <objects>
+                <tableViewController id="jk5-4l-BGL" customClass="allTicketsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AbJ-oO-JFu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Qj9-74-XiR">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qj9-74-XiR" id="yFg-SB-vfx">
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="rL1-0b-8dT" kind="push" identifier="fvctosvc" id="IwO-us-5L9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jk5-4l-BGL" id="ruV-EZ-Gx5"/>
+                            <outlet property="delegate" destination="jk5-4l-BGL" id="Smc-Sf-l1G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Tickets" id="cTB-VC-0dI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3q-NT-yhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="-156"/>
+        </scene>
+        <!--Ticket Information-->
+        <scene sceneID="aOu-eA-o69">
+            <objects>
+                <viewController storyboardIdentifier="ticketDetailViewController" id="rL1-0b-8dT" customClass="ticketDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B00-pU-3bK"/>
+                        <viewControllerLayoutGuide type="bottom" id="nxt-Sq-i6Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="76e-yX-7Ux">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tourism.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJb-dZ-VXL">
+                                <rect key="frame" x="81" y="100" width="157" height="123"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCm-9H-1Ct">
+                                <rect key="frame" x="15" y="259" width="288" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="6yo-up-dBK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="23"/>
+                                <color key="textColor" red="0.27826400656078804" green="0.34931083681106029" blue="0.4774746192893401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg1-9B-PDz">
+                                <rect key="frame" x="43" y="301" width="232" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Cq8-7K-ZiM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="0.16095756890360616" green="0.41702724358974363" blue="0.12103635903028133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-ta-kZf">
+                                <rect key="frame" x="60" y="367" width="199" height="46"/>
+                                <color key="backgroundColor" red="0.10348756916175154" green="0.26966697024582265" blue="0.41702724358974363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="eiW-fj-KCd"/>
+                                </constraints>
+                                <state key="normal" title="Book Ticket">
+                                    <color key="titleColor" red="0.94318572711767823" green="1" blue="0.95707898241600609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bookTicket:" destination="rL1-0b-8dT" eventType="touchUpInside" id="JhP-ic-jHy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81482550242589724" green="0.92045885324478149" blue="0.89102665913809043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gg1-9B-PDz" firstAttribute="leading" secondItem="76e-yX-7Ux" secondAttribute="leadingMargin" constant="27" id="1b5-Eb-eAe"/>
+                            <constraint firstItem="lJb-dZ-VXL" firstAttribute="top" secondItem="B00-pU-3bK" secondAttribute="bottom" constant="36" id="4vx-vl-g5R"/>
+                            <constraint firstItem="lJb-dZ-VXL" firstAttribute="centerX" secondItem="76e-yX-7Ux" secondAttribute="centerX" id="A7E-Zo-N3V"/>
+                            <constraint firstItem="uCm-9H-1Ct" firstAttribute="centerX" secondItem="gg1-9B-PDz" secondAttribute="centerX" id="Fdl-de-8FS"/>
+                            <constraint firstItem="6uM-ta-kZf" firstAttribute="leading" secondItem="76e-yX-7Ux" secondAttribute="leadingMargin" constant="44" id="IfV-fv-k9h"/>
+                            <constraint firstItem="nxt-Sq-i6Y" firstAttribute="top" secondItem="6uM-ta-kZf" secondAttribute="bottom" constant="67" id="Jpr-CB-aSD"/>
+                            <constraint firstItem="lJb-dZ-VXL" firstAttribute="leading" secondItem="76e-yX-7Ux" secondAttribute="leadingMargin" constant="65" id="cOM-y8-t8a"/>
+                            <constraint firstItem="6uM-ta-kZf" firstAttribute="top" secondItem="gg1-9B-PDz" secondAttribute="bottom" constant="24" id="db0-xm-Bie"/>
+                            <constraint firstItem="lJb-dZ-VXL" firstAttribute="centerX" secondItem="uCm-9H-1Ct" secondAttribute="centerX" id="hTL-9Y-1SP"/>
+                            <constraint firstItem="uCm-9H-1Ct" firstAttribute="leading" secondItem="76e-yX-7Ux" secondAttribute="leadingMargin" constant="-1" id="mUQ-wV-5y0"/>
+                            <constraint firstItem="gg1-9B-PDz" firstAttribute="centerX" secondItem="6uM-ta-kZf" secondAttribute="centerX" id="s9d-1d-bJ5"/>
+                            <constraint firstItem="gg1-9B-PDz" firstAttribute="top" secondItem="uCm-9H-1Ct" secondAttribute="bottom" id="v6t-WG-J6R"/>
+                            <constraint firstItem="uCm-9H-1Ct" firstAttribute="top" secondItem="lJb-dZ-VXL" secondAttribute="bottom" constant="36" id="zHu-3e-liY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ticket Information" id="Szp-Rp-emB"/>
+                    <connections>
+                        <outlet property="bookTicketBtn" destination="6uM-ta-kZf" id="51d-tx-45K"/>
+                        <outlet property="nameLbl" destination="uCm-9H-1Ct" id="yhz-Cp-DhF"/>
+                        <outlet property="priceLbl" destination="gg1-9B-PDz" id="zWv-9V-g3N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6La-T1-615" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="-156.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tourism.png" width="200" height="200"/>
+    </resources>
+</document>
